@@ -1,0 +1,34 @@
+用户模式>;
+特权模式#;
+全局配置模式(config);
+
+用户模式进入特权模式:Switch>enabel
+特权模式进入全局配置模式Switch#configure terminal            Switch#conf t
+退到上层操作模式Switch(config) #exit
+退到上一层操作模式Switch(config) #end
+
+
+Switch(config) #hostmane Switch设置交换机名称SwitchA   
+SwitchA(config)# no ip domain-lookup 禁止名称解析服务器  
+
+
+SwitchA(config)#interface vlan 1 配置管理ip
+SwitchA(config-if)#ip address 192.168.0.1  255.255.255.0
+SwitchA(config-if)#no shutdown
+SwitchA(config-if)#exit
+
+SwitchA(config)#ip default - gateway 192.168.0.254设置默认网关地址
+SwitchA(config)#int f0/1    进入端口1配置模式
+SwitchA(config-if)# speed?  端口配置速度
+SwitchA(config-if)#端口工作模式配置
+?的作用:查看该命令的参数
+SwitchA#show running-config   显示运行时配置文件内容
+SwitchA#show startup-config 显示启动配置文件内容
+
+
+
+远程登录交换机命令y031214. 进入用户模式
+本地登录交换机命令cisco       进入用户模式
+远程本地是同一级的
+
+进入交换机特权模式命令class 进入特权模式
