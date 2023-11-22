@@ -1,0 +1,7 @@
+#将git上的代码更新到本地
+git pull origin <branch-name>/分支名称
+
+#将本地的文件上传到git
+git add 666.txt添加文件名
+git commit -m “cc” 引号内的内容可以随意改动，这个语句的意思是 给你刚刚上传的文件一个备注，方便查找记忆而已
+git push origin master
