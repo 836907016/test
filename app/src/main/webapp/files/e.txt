@@ -1,0 +1,79 @@
+一.By.ID
+
+driver.find_element(By.ID, "J_u_login_username")
+By.ID 表示使用元素的 ID 属性进行定位。
+"J_u_login_username" 是要查找的元素的 ID 值。
+
+
+
+
+二.By.Name
+
+driver.find_element(By.Name, "element_name") 
+方法来查找具有指定 name 属性值的元素。其中，"element_name" 是要查找的元素的 name 属性值。
+
+
+
+
+三.By.ClassName
+
+
+element = driver.find_element(By.ClassName, "class_name")
+"class_name" 是要查找的元素的类名
+如果有多个元素具有相同的类名，则将返回第一个匹配的元素。如果找不到匹配的元素，则会抛出 NoSuchElementException 异常。
+
+
+四.By.CSS_SELECTOR
+
+element = driver.find_element(By.CSS_SELECTOR, "css_selector")
+CSS 选择器（CSS Selector）可以通过多种方式对元素进行灵活而强大的定位
+CSS 选择器可以使用不同的属性、标签名、类名、父子关系、伪类等来定位元素。其语法和规则基于 CSS 规范，并允许更精细的元素定位。
+以下是一些示例 CSS 选择器：
+根据 ID 定位元素：#element_id
+根据类名定位元素：.class_name
+根据属性值定位元素：[attribute=value]
+根据标签名定位元素：tag_name
+根据父子关系定位元素：parent_selector > child_selector
+根据伪类定位元素：:nth-of-type(n)
+
+
+五.By.CSS_SELECTOR
+
+element = driver.find_element(By.XPATH, "xpath_expression")
+其中，"xpath_expression" 是要使用的 XPath 表达式。
+以下是一些示例 XPath 表达式：
+根据元素的 ID 定位：//*[@id="element_id"]
+根据元素的类名定位：//*[contains(@class, "class_name")]
+根据元素的属性值定位：//*[@attribute="value"]
+根据元素的文本内容定位：//*[text()="text_content"]
+根据元素的层次结构定位：//parent_element/child_element
+使用索引定位同级的元素：(//tag_name)[index]
+使用逻辑运算符和多个条件进行组合定位：//tag_name[@attribute="value" and contains(text(), "text_content")]
+
+
+六.By.TAG_NAME
+
+element = driver.find_element(By.TAG_NAME, "tag_name")
+其中，"tag_name" 是您要查找的元素的标签名。
+通过使用标签名，您可以定位到所有具有指定标签名的元素，例如 <div>、<input>、<a> 等。
+需要注意的是，标签名定位方法通常用于查找页面上具有特定标签名的第一个元素。如果页面上存在多个具有相同标签名的元素，并且您希望查找它们所有，可以使用 driver.find_elements(By.TAG_NAME, "tag_name")，注意此时返回的是一个元素列表。
+请确保提供正确且准确的标签名来定位元素。
+
+
+七.By.LINK_TEXT
+
+element = driver.find_element(By.LINK_TEXT, "link_text")
+其中，"link_text" 是您要查找的链接的文本内容。
+链接文本定位方法用于查找页面上以 <a> 标签定义的链接元素。通过提供链接的显示文本，可以定位到包含该文本的链接元素。
+需要注意的是，链接文本定位方法适用于精确匹配链接文本的情况。如果链接文本在页面上不是唯一的，或者存在多个类似的链接，您可能需要使用其他方法或更精确的定位策略来定位目标链接。
+请确保提供准确的链接文本来定位链接元素，以确保定位到您想要的特定链接。
+
+
+八.By.PARTIAL_LINK_TEXT
+
+element = driver.find_element(By.PARTIAL_LINK_TEXT, "partial_link_text")
+其中，"partial_link_text" 是您要查找的链接的部分文本内容。
+部分链接文本定位方法用于查找页面上包含指定部分文本的链接元素。提供的部分文本通常是链接的一部分，而不是完整的链接文本。
+需要注意的是，部分链接文本定位方法匹配第一个包含指定部分文本的链接元素。如果存在多个类似的链接或链接中包含相同的部分文本，您可能需要使用其他方法或更精确的定位策略来定位目标链接。
+
+

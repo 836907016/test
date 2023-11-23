@@ -1,0 +1,16 @@
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:07:24 +0800] "GET / HTTP/1.1" 200 179 http-bio-8080-exec-1 21
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:07:24 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:07:29 +0800] "GET /uploadServlet HTTP/1.1" 200 - http-bio-8080-exec-4 13
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:08:40 +0800] "GET /uploadServlet HTTP/1.1" 200 - http-bio-8080-exec-6 5
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:09:21 +0800] "GET /fileUpload.jsp HTTP/1.1" 200 642 http-bio-8080-exec-8 279
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:09:32 +0800] "POST /uploadServlet HTTP/1.1" 200 79 http-bio-8080-exec-9 13
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:13:18 +0800] "POST /uploadServlet HTTP/1.1" 200 79 http-bio-8080-exec-1 2
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:13:28 +0800] "POST /uploadServlet HTTP/1.1" 200 79 http-bio-8080-exec-1 2
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:18:16 +0800] "GET /fileUpload.jsp HTTP/1.1" 200 642 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:18:23 +0800] "POST /uploadServlet HTTP/1.1" 200 85 http-bio-8080-exec-5 3
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:38:33 +0800] "GET //downloadServlet HTTP/1.1" 404 983 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:38:56 +0800] "GET /downloadServlet HTTP/1.1" 404 981 http-bio-8080-exec-7 1
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:43:55 +0800] "GET /downloadServlet%20e HTTP/1.1" 404 989 http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:44:01 +0800] "GET /downloadServlet%20/e HTTP/1.1" 404 991 http-bio-8080-exec-3 1
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:49:31 +0800] "GET /downloadServlet?filename=e.txt HTTP/1.1" 404 981 http-bio-8080-exec-5 1
+0:0:0:0:0:0:0:1 - - [23/Nov/2023:17:50:30 +0800] "GET /downloadServlet?filename=e.txt HTTP/1.1" 200 3991 http-bio-8080-exec-1 23
